@@ -3,6 +3,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   author: 'yicr',
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.80.0',
+  typescriptVersion: '4.9.x',
   defaultReleaseBranch: 'main',
   name: '@gammarer/aws-waf-ip-restriction-rule-group',
   description: 'This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2',
