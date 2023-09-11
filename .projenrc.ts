@@ -23,5 +23,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['yicr'],
   },
+  publishToPypi: {
+    distName: 'gammarer.aws-waf-ip-restriction-rule-group',
+    module: 'gammarer.aws_waf_ip_restriction_rule_group',
+  },
+  publishToMaven: {
+    mavenGroupId: 'com.gammarer',
+    javaPackage: 'com.gammarer.cdk.aws.waf_ip_restriction_rule_group',
+    mavenArtifactId: 'aws-waf-ip-restriction-rule-group',
+    mavenEndpoint: 'https://s01.oss.sonatype.org',
+  },
 });
 project.synth();
