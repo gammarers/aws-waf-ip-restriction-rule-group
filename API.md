@@ -1,4 +1,14 @@
+[![GitHub](https://img.shields.io/github/license/yicr/aws-waf-ip-restriction-rule-group?style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/blob/main/LICENSE)
+[![npm (scoped)](https://img.shields.io/npm/v/@gammarer/aws-waf-ip-restriction-rule-group?style=flat-square)](https://www.npmjs.com/package/@gammarer/aws-waf-ip-restriction-rule-group)
+[![PyPI](https://img.shields.io/pypi/v/gammarer.aws-waf-ip-restriction-rule-group?style=flat-square)](https://pypi.org/project/gammarer.aws-waf-ip-restriction-rule-group/)
+<!-- [![Nuget](https://img.shields.io/nuget/v/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup?style=flat-square)](https://www.nuget.org/packages/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup/)  -->
+[![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/com.gammarer/aws-waf-ip-restriction-rule-group?server=https%3A%2F%2Fs01.oss.sonatype.org%2F&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/releases/com/gammarer/aws-waf-ip-restriction-rule-group/)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/yicr/aws-waf-ip-restriction-rule-group/release.yml?branch=main&label=release&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/actions/workflows/release.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/yicr/aws-waf-ip-restriction-rule-group?sort=semver&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/releases)
+
 # AWS WAF(V2) IP Restriction Rule Group
+
+This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2
 
 ## Resources
 
@@ -15,6 +25,24 @@ npm install @gammarer/aws-waf-ip-restriction-rule-group
 # or
 yarn add @gammarer/aws-waf-ip-restriction-rule-group
 ```
+
+### Python
+
+```shell
+pip install gammarer.aws-waf-ip-restriction-rule-group
+```
+
+### Java
+
+Add the following to pom.xml:
+
+```xml
+<dependency>
+  <groupId>com.gammarer</groupId>
+  <artifactId>aws-waf-ip-restriction-rule-group</artifactId>
+</dependency>
+```
+
 
 ## Example
 
@@ -49,7 +77,7 @@ new WafIpRestrictRuleGroup(scope: Construct, id: string, props: WafIpRestrictRul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.props">props</a></code> | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps">WafIpRestrictRuleGroupProps</a></code> | *No description.* |
 
@@ -58,6 +86,12 @@ new WafIpRestrictRuleGroup(scope: Construct, id: string, props: WafIpRestrictRul
 ##### `scope`<sup>Required</sup> <a name="scope" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
+
+Specifies whether this is for an Amazon CloudFront distribution or for a regional application.
+
+A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AWS AppSync GraphQL API, an Amazon Cognito user pool, or an AWS App Runner service. Valid Values are `CLOUDFRONT` and `REGIONAL` .
+
+> For `CLOUDFRONT` , you must create your WAFv2 resources in the US East (N. Virginia) Region, `us-east-1` .
 
 ---
 
@@ -225,20 +259,20 @@ cfnResource.addOverride('Properties.GlobalSecondaryIndexes.1.ProjectionType', 'I
 would add the overrides
 ```json
 "Properties": {
-   "GlobalSecondaryIndexes": [
-     {
-       "Projection": {
-         "NonKeyAttributes": [ "myattribute" ]
-         ...
-       }
-       ...
-     },
-     {
-       "ProjectionType": "INCLUDE"
-       ...
-     },
-   ]
-   ...
+  "GlobalSecondaryIndexes": [
+    {
+      "Projection": {
+        "NonKeyAttributes": [ "myattribute" ]
+        ...
+      }
+      ...
+    },
+    {
+      "ProjectionType": "INCLUDE"
+      ...
+    },
+  ]
+  ...
 }
 ```
 
@@ -254,7 +288,7 @@ template.
 
 The path of the property, you can use dot notation to override values in complex types.
 
-Any intermdediate keys
+Any intermediate keys
 will be created as needed.
 
 ---
@@ -396,7 +430,7 @@ node metadata ends up in the Cloud Assembly.)
 ##### `obtainDependencies` <a name="obtainDependencies" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainDependencies"></a>
 
 ```typescript
-public obtainDependencies(): CfnResource | Stack[]
+public obtainDependencies(): Stack | CfnResource[]
 ```
 
 Retrieves an array of resources this resource depends on.
@@ -549,13 +583,13 @@ Check whether the given construct is a CfnResource.
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Key:value pairs associated with an AWS resource. |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.capacity">capacity</a></code> | <code>number</code> | The web ACL capacity units (WCUs) required for this rule group. |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.scope">scope</a></code> | <code>string</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig">visibilityConfig</a></code> | <code>aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty \| aws-cdk-lib.IResolvable</code> | Defines and enables Amazon CloudWatch metrics and web request sample collection. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels">availableLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty \| aws-cdk-lib.IResolvable[]</code> | The labels that one or more rules in this rule group add to matching web requests. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels">consumedLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty \| aws-cdk-lib.IResolvable[]</code> | The labels that one or more rules in this rule group match against in label match statements. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies">customResponseBodies</a></code> | <code>aws-cdk-lib.IResolvable \| {[ key: string ]: aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty \| aws-cdk-lib.IResolvable}</code> | A map of custom response keys and content bodies. |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig">visibilityConfig</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty</code> | Defines and enables Amazon CloudWatch metrics and web request sample collection. |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels">availableLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group add to matching web requests. |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels">consumedLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group match against in label match statements. |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies">customResponseBodies</a></code> | <code>aws-cdk-lib.IResolvable \| {[ key: string ]: aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty}</code> | A map of custom response keys and content bodies. |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.description">description</a></code> | <code>string</code> | A description of the rule group that helps with identification. |
 | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.name">name</a></code> | <code>string</code> | The name of the rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules">rules</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty \| aws-cdk-lib.IResolvable[]</code> | The rule statements used to identify the web requests that you want to allow, block, or count. |
+| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules">rules</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty[]</code> | The rule statements used to identify the web requests that you want to allow, block, or count. |
 
 ---
 
@@ -739,7 +773,7 @@ public readonly scope: string;
 
 Specifies whether this is for an Amazon CloudFront distribution or for a regional application.
 
-A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AWS AppSync GraphQL API, or an Amazon Cognito user pool. Valid Values are `CLOUDFRONT` and `REGIONAL` .
+A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AWS AppSync GraphQL API, an Amazon Cognito user pool, or an AWS App Runner service. Valid Values are `CLOUDFRONT` and `REGIONAL` .
 
 > For `CLOUDFRONT` , you must create your WAFv2 resources in the US East (N. Virginia) Region, `us-east-1` .
 
@@ -750,10 +784,10 @@ A regional application can be an Application Load Balancer (ALB), an Amazon API 
 ##### `visibilityConfig`<sup>Required</sup> <a name="visibilityConfig" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig"></a>
 
 ```typescript
-public readonly visibilityConfig: VisibilityConfigProperty | IResolvable;
+public readonly visibilityConfig: IResolvable | VisibilityConfigProperty;
 ```
 
-- *Type:* aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty | aws-cdk-lib.IResolvable
+- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty
 
 Defines and enables Amazon CloudWatch metrics and web request sample collection.
 
@@ -764,10 +798,10 @@ Defines and enables Amazon CloudWatch metrics and web request sample collection.
 ##### `availableLabels`<sup>Optional</sup> <a name="availableLabels" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels"></a>
 
 ```typescript
-public readonly availableLabels: IResolvable | LabelSummaryProperty | IResolvable[];
+public readonly availableLabels: IResolvable | IResolvable | LabelSummaryProperty[];
 ```
 
-- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty | aws-cdk-lib.IResolvable[]
+- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]
 
 The labels that one or more rules in this rule group add to matching web requests.
 
@@ -780,10 +814,10 @@ These labels are defined in the `RuleLabels` for a `Rule` .
 ##### `consumedLabels`<sup>Optional</sup> <a name="consumedLabels" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels"></a>
 
 ```typescript
-public readonly consumedLabels: IResolvable | LabelSummaryProperty | IResolvable[];
+public readonly consumedLabels: IResolvable | IResolvable | LabelSummaryProperty[];
 ```
 
-- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty | aws-cdk-lib.IResolvable[]
+- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]
 
 The labels that one or more rules in this rule group match against in label match statements.
 
@@ -796,18 +830,18 @@ These labels are defined in a `LabelMatchStatement` specification, in the `State
 ##### `customResponseBodies`<sup>Optional</sup> <a name="customResponseBodies" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies"></a>
 
 ```typescript
-public readonly customResponseBodies: IResolvable | {[ key: string ]: CustomResponseBodyProperty | IResolvable};
+public readonly customResponseBodies: IResolvable | {[ key: string ]: IResolvable | CustomResponseBodyProperty};
 ```
 
-- *Type:* aws-cdk-lib.IResolvable | {[ key: string ]: aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty | aws-cdk-lib.IResolvable}
+- *Type:* aws-cdk-lib.IResolvable | {[ key: string ]: aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty}
 
 A map of custom response keys and content bodies.
 
 When you create a rule with a block action, you can send a custom response to the web request. You define these for the rule group, and then use them in the rules that you define in the rule group.
 
-For information about customizing web requests and responses, see [Customizing web requests and responses in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html) in the [AWS WAF Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) .
+For information about customizing web requests and responses, see [Customizing web requests and responses in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html) in the *AWS WAF Developer Guide* .
 
-For information about the limits on count and size for custom request and response settings, see [AWS WAF quotas](https://docs.aws.amazon.com/waf/latest/developerguide/limits.html) in the [AWS WAF Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) .
+For information about the limits on count and size for custom request and response settings, see [AWS WAF quotas](https://docs.aws.amazon.com/waf/latest/developerguide/limits.html) in the *AWS WAF Developer Guide* .
 
 > [http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-rulegroup.html#cfn-wafv2-rulegroup-customresponsebodies](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-rulegroup.html#cfn-wafv2-rulegroup-customresponsebodies)
 
@@ -846,10 +880,10 @@ You cannot change the name of a rule group after you create it.
 ##### `rules`<sup>Optional</sup> <a name="rules" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules"></a>
 
 ```typescript
-public readonly rules: IResolvable | RuleProperty | IResolvable[];
+public readonly rules: IResolvable | IResolvable | RuleProperty[];
 ```
 
-- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty | aws-cdk-lib.IResolvable[]
+- *Type:* aws-cdk-lib.IResolvable | aws-cdk-lib.IResolvable | aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty[]
 
 The rule statements used to identify the web requests that you want to allow, block, or count.
 
