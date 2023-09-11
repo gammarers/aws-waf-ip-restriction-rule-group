@@ -11,6 +11,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/yicr/aws-waf-ip-restriction-rule-group.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
+  minNodeVersion: '16.0.0',
+  workflowNodeVersion: '18.17.1',
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
