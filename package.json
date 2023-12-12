@@ -17,6 +17,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:dotnet": "npx projen package:dotnet",
     "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
     "package:python": "npx projen package:python",
@@ -130,6 +131,10 @@
       "python": {
         "distName": "gammarer.aws-waf-ip-restriction-rule-group",
         "module": "gammarer.aws_waf_ip_restriction_rule_group"
+      },
+      "dotnet": {
+        "namespace": "Gammarer.CDK.AWS",
+        "packageId": "Gammarer.CDK.AWS.WafIpRestrictionRuleGroup"
       }
     },
     "tsc": {
