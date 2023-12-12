@@ -1,7 +1,7 @@
 [![GitHub](https://img.shields.io/github/license/yicr/aws-waf-ip-restriction-rule-group?style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/blob/main/LICENSE)
 [![npm (scoped)](https://img.shields.io/npm/v/@gammarer/aws-waf-ip-restriction-rule-group?style=flat-square)](https://www.npmjs.com/package/@gammarer/aws-waf-ip-restriction-rule-group)
 [![PyPI](https://img.shields.io/pypi/v/gammarer.aws-waf-ip-restriction-rule-group?style=flat-square)](https://pypi.org/project/gammarer.aws-waf-ip-restriction-rule-group/)
-<!-- [![Nuget](https://img.shields.io/nuget/v/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup?style=flat-square)](https://www.nuget.org/packages/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup/)  -->
+[![Nuget](https://img.shields.io/nuget/v/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup?style=flat-square)](https://www.nuget.org/packages/Gammarer.CDK.AWS.WafIpRestrictionRuleGroup/)
 [![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/com.gammarer/aws-waf-ip-restriction-rule-group?server=https%3A%2F%2Fs01.oss.sonatype.org%2F&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/releases/com/gammarer/aws-waf-ip-restriction-rule-group/)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/yicr/aws-waf-ip-restriction-rule-group/release.yml?branch=main&label=release&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/actions/workflows/release.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/yicr/aws-waf-ip-restriction-rule-group?sort=semver&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/releases)
@@ -30,6 +30,12 @@ yarn add @gammarer/aws-waf-ip-restriction-rule-group
 
 ```shell
 pip install gammarer.aws-waf-ip-restriction-rule-group
+```
+
+### C# / .Net
+
+```shell
+dotnet add package Gammarer.CDK.AWS.WafIpRestrictionRuleGroup
 ```
 
 ### Java
