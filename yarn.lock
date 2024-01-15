@@ -662,17 +662,10 @@
     chalk "^4.1.2"
     semver "^7.5.4"
 
-"@jsii/spec@1.94.0", "@jsii/spec@^1.93.0", "@jsii/spec@^1.94.0":
+"@jsii/spec@1.94.0", "@jsii/spec@^1.88.0", "@jsii/spec@^1.93.0", "@jsii/spec@^1.94.0":
   version "1.94.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.94.0.tgz#a4584179cd83e50110169a3f5ec1b6ab4ad362f4"
   integrity sha512-ur1aUMPsdZgflUIZC4feyJzrkGYzvtiIJxRowkSxr7Ip/sLCKvi61dvImWtJY9ZhEAl7Kiq7I/R32WVyxW0JrQ==
-  dependencies:
-    ajv "^8.12.0"
-
-"@jsii/spec@^1.88.0":
-  version "1.89.0"
-  resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.89.0.tgz#d337c97234bec2fdffe25ad449ebacf22972c55c"
-  integrity sha512-byzIC5M5FrEaW+GaPGQfPsobfwmEfzHvS7dh5d5fgY4VvvsHBkkhhF/H5xUG+1wQBcdBnqdKyp5CEFm8UEVfqg==
   dependencies:
     ajv "^8.12.0"
 
@@ -4476,12 +4469,7 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.16.tgz#a14f64e0954f6e25cc6587bd4f392522db0d998f"
   integrity sha512-eWN+LnM3GR6gPu35WxNgbGl8rmY1AEmoMDvL/QD6zYmPWgywxWqJWNdLGT+ke8dKNWrcYgYjPpG5gbTfghP8rw==
 
-spdx-license-list@^6.6.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/spdx-license-list/-/spdx-license-list-6.7.0.tgz#dd8c6aba00e7a3f9549e473d0be2b83c4cae081f"
-  integrity sha512-NFqavuJxNsHdwSy/0PjmUpcc76XwlmHQRPjVVtE62qmSLhKJUnzSvJCkU9nrY6TsChfGU1xqGePriBkNtNRMiA==
-
-spdx-license-list@^6.8.0:
+spdx-license-list@^6.6.0, spdx-license-list@^6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/spdx-license-list/-/spdx-license-list-6.8.0.tgz#92a99cd6c8b97fe98ae83c54deaffd4d9d503f74"
   integrity sha512-5UdM7r9yJ1EvsPQZWfa41AZjLQngl9iMMysm9XBW7Lqhq7aF8cllfqjS+rFCHB8FFMGSM0yFWue2LUV9mR0QzQ==
@@ -4893,9 +4881,9 @@ typescript@5.1.x, typescript@~5.1.6:
   integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
 typescript@next:
-  version "5.3.0-dev.20230910"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230910.tgz#76bcbfaef1768838b6ca567a0d01c30a2e313847"
-  integrity sha512-ig1saY778M8pNhr99DhhgHKbFTCZCsRt95xv/ToPRevn4vttmcbs/Q/tSyBJSdPlkfQ5wO/XWU1kMI081iAmmw==
+  version "5.4.0-dev.20240115"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.0-dev.20240115.tgz#91db38a7786b84f8288c2bbf8115e1ca05608049"
+  integrity sha512-p3nYa7pku8FHvfLDyiDcplZbKXEQTcZqtvXN6JTBu/u5cNLinBzOiKA3cVfHcgudzCUMtU5ke94dpwFNr+U3qw==
 
 typescript@~3.9.10:
   version "3.9.10"
