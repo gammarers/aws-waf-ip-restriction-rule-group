@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Web ACL Rule Group default testing Web Acl Rule Group scope=global testing Should match snapshot: global 1`] = `
-Object {
-  "Parameters": Object {
-    "BootstrapVersion": Object {
+{
+  "Parameters": {
+    "BootstrapVersion": {
       "Default": "/cdk-bootstrap/hnb659fds/version",
       "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
       "Type": "AWS::SSM::Parameter::Value<String>",
     },
   },
-  "Resources": Object {
-    "IpSet": Object {
-      "Properties": Object {
-        "Addresses": Array [
+  "Resources": {
+    "IpSet": {
+      "Properties": {
+        "Addresses": [
           "192.0.2.0/24",
           "198.51.100.0/24",
           "203.0.113.0/24",
@@ -22,43 +22,43 @@ Object {
       },
       "Type": "AWS::WAFv2::IPSet",
     },
-    "WafIpRestrictRuleGroup": Object {
-      "Properties": Object {
+    "WafIpRestrictRuleGroup": {
+      "Properties": {
         "Capacity": 10,
-        "CustomResponseBodies": Object {
-          "ip-restrict": Object {
+        "CustomResponseBodies": {
+          "ip-restrict": {
             "Content": "Sorry, You Are Not Allowed to Access This Service.",
             "ContentType": "TEXT_PLAIN",
           },
         },
         "Description": "ip restrict rule group",
-        "Rules": Array [
-          Object {
-            "Action": Object {
-              "Allow": Object {},
+        "Rules": [
+          {
+            "Action": {
+              "Allow": {},
             },
             "Name": "allow-ip-rule",
             "Priority": 0,
-            "Statement": Object {
-              "IPSetReferenceStatement": Object {
-                "Arn": Object {
-                  "Fn::GetAtt": Array [
+            "Statement": {
+              "IPSetReferenceStatement": {
+                "Arn": {
+                  "Fn::GetAtt": [
                     "IpSet",
                     "Arn",
                   ],
                 },
               },
             },
-            "VisibilityConfig": Object {
+            "VisibilityConfig": {
               "CloudWatchMetricsEnabled": true,
               "MetricName": "AllowIpRule",
               "SampledRequestsEnabled": true,
             },
           },
-          Object {
-            "Action": Object {
-              "Block": Object {
-                "CustomResponse": Object {
+          {
+            "Action": {
+              "Block": {
+                "CustomResponse": {
                   "CustomResponseBodyKey": "ip-restrict",
                   "ResponseCode": 403,
                 },
@@ -66,12 +66,12 @@ Object {
             },
             "Name": "deny-ip-rule",
             "Priority": 1,
-            "Statement": Object {
-              "NotStatement": Object {
-                "Statement": Object {
-                  "IPSetReferenceStatement": Object {
-                    "Arn": Object {
-                      "Fn::GetAtt": Array [
+            "Statement": {
+              "NotStatement": {
+                "Statement": {
+                  "IPSetReferenceStatement": {
+                    "Arn": {
+                      "Fn::GetAtt": [
                         "IpSet",
                         "Arn",
                       ],
@@ -80,7 +80,7 @@ Object {
                 },
               },
             },
-            "VisibilityConfig": Object {
+            "VisibilityConfig": {
               "CloudWatchMetricsEnabled": true,
               "MetricName": "DenyIpRule",
               "SampledRequestsEnabled": true,
@@ -88,7 +88,7 @@ Object {
           },
         ],
         "Scope": "CLOUDFRONT",
-        "VisibilityConfig": Object {
+        "VisibilityConfig": {
           "CloudWatchMetricsEnabled": true,
           "MetricName": "IpRestrictRule",
           "SampledRequestsEnabled": true,
@@ -97,22 +97,22 @@ Object {
       "Type": "AWS::WAFv2::RuleGroup",
     },
   },
-  "Rules": Object {
-    "CheckBootstrapVersion": Object {
-      "Assertions": Array [
-        Object {
-          "Assert": Object {
-            "Fn::Not": Array [
-              Object {
-                "Fn::Contains": Array [
-                  Array [
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
                     "1",
                     "2",
                     "3",
                     "4",
                     "5",
                   ],
-                  Object {
+                  {
                     "Ref": "BootstrapVersion",
                   },
                 ],
@@ -128,18 +128,18 @@ Object {
 `;
 
 exports[`Web ACL Rule Group default testing Web Acl Rule Group scope=regional testing Should match snapshot: regional 1`] = `
-Object {
-  "Parameters": Object {
-    "BootstrapVersion": Object {
+{
+  "Parameters": {
+    "BootstrapVersion": {
       "Default": "/cdk-bootstrap/hnb659fds/version",
       "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
       "Type": "AWS::SSM::Parameter::Value<String>",
     },
   },
-  "Resources": Object {
-    "IpSet": Object {
-      "Properties": Object {
-        "Addresses": Array [
+  "Resources": {
+    "IpSet": {
+      "Properties": {
+        "Addresses": [
           "192.0.2.0/24",
           "198.51.100.0/24",
           "203.0.113.0/24",
@@ -149,44 +149,44 @@ Object {
       },
       "Type": "AWS::WAFv2::IPSet",
     },
-    "WafIpRestrictRuleGroup": Object {
-      "Properties": Object {
+    "WafIpRestrictRuleGroup": {
+      "Properties": {
         "Capacity": 10,
-        "CustomResponseBodies": Object {
-          "ip-restrict": Object {
+        "CustomResponseBodies": {
+          "ip-restrict": {
             "Content": "Sorry, You Are Not Allowed to Access This Service.",
             "ContentType": "TEXT_PLAIN",
           },
         },
         "Description": "ip restrict rule group",
         "Name": "example-waf-ip-restrict-rule-group",
-        "Rules": Array [
-          Object {
-            "Action": Object {
-              "Allow": Object {},
+        "Rules": [
+          {
+            "Action": {
+              "Allow": {},
             },
             "Name": "allow-ip-rule",
             "Priority": 0,
-            "Statement": Object {
-              "IPSetReferenceStatement": Object {
-                "Arn": Object {
-                  "Fn::GetAtt": Array [
+            "Statement": {
+              "IPSetReferenceStatement": {
+                "Arn": {
+                  "Fn::GetAtt": [
                     "IpSet",
                     "Arn",
                   ],
                 },
               },
             },
-            "VisibilityConfig": Object {
+            "VisibilityConfig": {
               "CloudWatchMetricsEnabled": true,
               "MetricName": "AllowIpRule",
               "SampledRequestsEnabled": true,
             },
           },
-          Object {
-            "Action": Object {
-              "Block": Object {
-                "CustomResponse": Object {
+          {
+            "Action": {
+              "Block": {
+                "CustomResponse": {
                   "CustomResponseBodyKey": "ip-restrict",
                   "ResponseCode": 403,
                 },
@@ -194,12 +194,12 @@ Object {
             },
             "Name": "deny-ip-rule",
             "Priority": 1,
-            "Statement": Object {
-              "NotStatement": Object {
-                "Statement": Object {
-                  "IPSetReferenceStatement": Object {
-                    "Arn": Object {
-                      "Fn::GetAtt": Array [
+            "Statement": {
+              "NotStatement": {
+                "Statement": {
+                  "IPSetReferenceStatement": {
+                    "Arn": {
+                      "Fn::GetAtt": [
                         "IpSet",
                         "Arn",
                       ],
@@ -208,7 +208,7 @@ Object {
                 },
               },
             },
-            "VisibilityConfig": Object {
+            "VisibilityConfig": {
               "CloudWatchMetricsEnabled": true,
               "MetricName": "DenyIpRule",
               "SampledRequestsEnabled": true,
@@ -216,7 +216,7 @@ Object {
           },
         ],
         "Scope": "REGIONAL",
-        "VisibilityConfig": Object {
+        "VisibilityConfig": {
           "CloudWatchMetricsEnabled": true,
           "MetricName": "IpRestrictRule",
           "SampledRequestsEnabled": true,
@@ -225,22 +225,22 @@ Object {
       "Type": "AWS::WAFv2::RuleGroup",
     },
   },
-  "Rules": Object {
-    "CheckBootstrapVersion": Object {
-      "Assertions": Array [
-        Object {
-          "Assert": Object {
-            "Fn::Not": Array [
-              Object {
-                "Fn::Contains": Array [
-                  Array [
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
                     "1",
                     "2",
                     "3",
                     "4",
                     "5",
                   ],
-                  Object {
+                  {
                     "Ref": "BootstrapVersion",
                   },
                 ],
