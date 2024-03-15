@@ -1,3 +1,5 @@
+# AWS WAF(V2) IP Restriction Rule Group
+
 [![GitHub](https://img.shields.io/github/license/yicr/aws-waf-ip-restriction-rule-group?style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/blob/main/LICENSE)
 [![npm (scoped)](https://img.shields.io/npm/v/@gammarer/aws-waf-ip-restriction-rule-group?style=flat-square)](https://www.npmjs.com/package/@gammarer/aws-waf-ip-restriction-rule-group)
 [![PyPI](https://img.shields.io/pypi/v/gammarer.aws-waf-ip-restriction-rule-group?style=flat-square)](https://pypi.org/project/gammarer.aws-waf-ip-restriction-rule-group/)
@@ -6,7 +8,7 @@
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/yicr/aws-waf-ip-restriction-rule-group/release.yml?branch=main&label=release&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/actions/workflows/release.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/yicr/aws-waf-ip-restriction-rule-group?sort=semver&style=flat-square)](https://github.com/yicr/aws-waf-ip-restriction-rule-group/releases)
 
-# AWS WAF(V2) IP Restriction Rule Group
+[![View on Construct Hub](https://constructs.dev/badge?package=@gammarer/aws-waf-ip-restriction-rule-group)](https://constructs.dev/packages/@gammarer/aws-waf-ip-restriction-rule-group)
 
 This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2
 
@@ -48,7 +50,6 @@ Add the following to pom.xml:
   <artifactId>aws-waf-ip-restriction-rule-group</artifactId>
 </dependency>
 ```
-
 
 ## Example
 
