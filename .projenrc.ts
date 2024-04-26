@@ -26,8 +26,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     allowedUsernames: ['yicr'],
   },
   publishToPypi: {
-    distName: 'gammarer.aws-waf-ip-restriction-rule-group',
-    module: 'gammarer.aws_waf_ip_restriction_rule_group',
+    distName: 'gammarers.aws-waf-ip-restriction-rule-group',
+    module: 'gammarers.aws_waf_ip_restriction_rule_group',
   },
   publishToMaven: {
     mavenGroupId: 'com.gammarer',
