@@ -2,25 +2,25 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### WafIpRestrictRuleGroup <a name="WafIpRestrictRuleGroup" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup"></a>
+### WafIpRestrictRuleGroup <a name="WafIpRestrictRuleGroup" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup"></a>
 
-#### Initializers <a name="Initializers" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer"></a>
+#### Initializers <a name="Initializers" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer"></a>
 
 ```typescript
-import { WafIpRestrictRuleGroup } from '@gammarer/aws-waf-ip-restriction-rule-group'
+import { WafIpRestrictRuleGroup } from '@gammarers/aws-waf-ip-restriction-rule-group'
 
 new WafIpRestrictRuleGroup(scope: Construct, id: string, props: WafIpRestrictRuleGroupProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.props">props</a></code> | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps">WafIpRestrictRuleGroupProps</a></code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.props">props</a></code> | <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps">WafIpRestrictRuleGroupProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -32,15 +32,15 @@ A regional application can be an Application Load Balancer (ALB), an Amazon API 
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.Initializer.parameter.props"></a>
 
-- *Type:* <a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps">WafIpRestrictRuleGroupProps</a>
+- *Type:* <a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps">WafIpRestrictRuleGroupProps</a>
 
 ---
 
@@ -48,27 +48,27 @@ A regional application can be an Application Load Balancer (ALB), an Amazon API 
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride">addDeletionOverride</a></code> | Syntactic sugar for `addOverride(path, undefined)`. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency">addDependency</a></code> | Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn">addDependsOn</a></code> | Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata">addMetadata</a></code> | Add a value to the CloudFormation Resource Metadata. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride">addOverride</a></code> | Adds an override to the synthesized CloudFormation resource. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride">addPropertyDeletionOverride</a></code> | Adds an override that deletes the value of a property from the resource definition. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride">addPropertyOverride</a></code> | Adds an override to a resource property. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy">applyRemovalPolicy</a></code> | Sets the deletion policy of the resource based on the removal policy specified. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt">getAtt</a></code> | Returns a token for an runtime attribute of this resource. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata">getMetadata</a></code> | Retrieve a value value from the CloudFormation Resource Metadata. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainDependencies">obtainDependencies</a></code> | Retrieves an array of resources this resource depends on. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainResourceDependencies">obtainResourceDependencies</a></code> | Get a shallow copy of dependencies between this resource and other resources in the same stack. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency">removeDependency</a></code> | Indicates that this resource no longer depends on another resource. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency">replaceDependency</a></code> | Replaces one dependency with another. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect">inspect</a></code> | Examines the CloudFormation resource and discloses attributes. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride">addDeletionOverride</a></code> | Syntactic sugar for `addOverride(path, undefined)`. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency">addDependency</a></code> | Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn">addDependsOn</a></code> | Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata">addMetadata</a></code> | Add a value to the CloudFormation Resource Metadata. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride">addOverride</a></code> | Adds an override to the synthesized CloudFormation resource. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride">addPropertyDeletionOverride</a></code> | Adds an override that deletes the value of a property from the resource definition. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride">addPropertyOverride</a></code> | Adds an override to a resource property. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy">applyRemovalPolicy</a></code> | Sets the deletion policy of the resource based on the removal policy specified. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt">getAtt</a></code> | Returns a token for an runtime attribute of this resource. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata">getMetadata</a></code> | Retrieve a value value from the CloudFormation Resource Metadata. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainDependencies">obtainDependencies</a></code> | Retrieves an array of resources this resource depends on. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainResourceDependencies">obtainResourceDependencies</a></code> | Get a shallow copy of dependencies between this resource and other resources in the same stack. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency">removeDependency</a></code> | Indicates that this resource no longer depends on another resource. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency">replaceDependency</a></code> | Replaces one dependency with another. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect">inspect</a></code> | Examines the CloudFormation resource and discloses attributes. |
 
 ---
 
-##### `toString` <a name="toString" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.toString"></a>
+##### `toString` <a name="toString" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.toString"></a>
 
 ```typescript
 public toString(): string
@@ -76,7 +76,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -84,7 +84,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -92,7 +92,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `addDeletionOverride` <a name="addDeletionOverride" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride"></a>
+##### `addDeletionOverride` <a name="addDeletionOverride" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride"></a>
 
 ```typescript
 public addDeletionOverride(path: string): void
@@ -100,7 +100,7 @@ public addDeletionOverride(path: string): void
 
 Syntactic sugar for `addOverride(path, undefined)`.
 
-###### `path`<sup>Required</sup> <a name="path" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDeletionOverride.parameter.path"></a>
 
 - *Type:* string
 
@@ -108,7 +108,7 @@ The path of the value to delete.
 
 ---
 
-##### `addDependency` <a name="addDependency" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency"></a>
+##### `addDependency` <a name="addDependency" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency"></a>
 
 ```typescript
 public addDependency(target: CfnResource): void
@@ -119,13 +119,13 @@ Indicates that this resource depends on another resource and cannot be provision
 This can be used for resources across stacks (or nested stack) boundaries
 and the dependency will automatically be transferred to the relevant scope.
 
-###### `target`<sup>Required</sup> <a name="target" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.CfnResource
 
 ---
 
-##### ~~`addDependsOn`~~ <a name="addDependsOn" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn"></a>
+##### ~~`addDependsOn`~~ <a name="addDependsOn" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn"></a>
 
 ```typescript
 public addDependsOn(target: CfnResource): void
@@ -133,13 +133,13 @@ public addDependsOn(target: CfnResource): void
 
 Indicates that this resource depends on another resource and cannot be provisioned unless the other resource has been successfully provisioned.
 
-###### `target`<sup>Required</sup> <a name="target" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addDependsOn.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.CfnResource
 
 ---
 
-##### `addMetadata` <a name="addMetadata" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata"></a>
+##### `addMetadata` <a name="addMetadata" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata"></a>
 
 ```typescript
 public addMetadata(key: string, value: any): void
@@ -157,19 +157,19 @@ Note that this is a different set of metadata from CDK node metadata; this
 metadata ends up in the stack template under the resource, whereas CDK
 node metadata ends up in the Cloud Assembly.)
 
-###### `key`<sup>Required</sup> <a name="key" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata.parameter.key"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addMetadata.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `addOverride` <a name="addOverride" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
@@ -219,7 +219,7 @@ for CloudFormation. If you pass CDK classes or structs, they will be
 rendered with lowercased key names, and CloudFormation will reject the
 template.
 
-###### `path`<sup>Required</sup> <a name="path" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride.parameter.path"></a>
 
 - *Type:* string
 
@@ -230,7 +230,7 @@ will be created as needed.
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addOverride.parameter.value"></a>
 
 - *Type:* any
 
@@ -240,7 +240,7 @@ Could be primitive or complex.
 
 ---
 
-##### `addPropertyDeletionOverride` <a name="addPropertyDeletionOverride" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride"></a>
+##### `addPropertyDeletionOverride` <a name="addPropertyDeletionOverride" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride"></a>
 
 ```typescript
 public addPropertyDeletionOverride(propertyPath: string): void
@@ -248,7 +248,7 @@ public addPropertyDeletionOverride(propertyPath: string): void
 
 Adds an override that deletes the value of a property from the resource definition.
 
-###### `propertyPath`<sup>Required</sup> <a name="propertyPath" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride.parameter.propertyPath"></a>
+###### `propertyPath`<sup>Required</sup> <a name="propertyPath" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyDeletionOverride.parameter.propertyPath"></a>
 
 - *Type:* string
 
@@ -256,7 +256,7 @@ The path to the property.
 
 ---
 
-##### `addPropertyOverride` <a name="addPropertyOverride" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride"></a>
+##### `addPropertyOverride` <a name="addPropertyOverride" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride"></a>
 
 ```typescript
 public addPropertyOverride(propertyPath: string, value: any): void
@@ -266,7 +266,7 @@ Adds an override to a resource property.
 
 Syntactic sugar for `addOverride("Properties.<...>", value)`.
 
-###### `propertyPath`<sup>Required</sup> <a name="propertyPath" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride.parameter.propertyPath"></a>
+###### `propertyPath`<sup>Required</sup> <a name="propertyPath" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride.parameter.propertyPath"></a>
 
 - *Type:* string
 
@@ -274,7 +274,7 @@ The path of the property.
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.addPropertyOverride.parameter.value"></a>
 
 - *Type:* any
 
@@ -282,7 +282,7 @@ The value.
 
 ---
 
-##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy"></a>
+##### `applyRemovalPolicy` <a name="applyRemovalPolicy" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy"></a>
 
 ```typescript
 public applyRemovalPolicy(policy?: RemovalPolicy, options?: RemovalPolicyOptions): void
@@ -303,19 +303,19 @@ can be found in the following link:
 
 > [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html#aws-attribute-deletionpolicy-options](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html#aws-attribute-deletionpolicy-options)
 
-###### `policy`<sup>Optional</sup> <a name="policy" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy.parameter.policy"></a>
+###### `policy`<sup>Optional</sup> <a name="policy" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy.parameter.policy"></a>
 
 - *Type:* aws-cdk-lib.RemovalPolicy
 
 ---
 
-###### `options`<sup>Optional</sup> <a name="options" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.applyRemovalPolicy.parameter.options"></a>
 
 - *Type:* aws-cdk-lib.RemovalPolicyOptions
 
 ---
 
-##### `getAtt` <a name="getAtt" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt"></a>
+##### `getAtt` <a name="getAtt" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt"></a>
 
 ```typescript
 public getAtt(attributeName: string, typeHint?: ResolutionTypeHint): Reference
@@ -326,7 +326,7 @@ Returns a token for an runtime attribute of this resource.
 Ideally, use generated attribute accessors (e.g. `resource.arn`), but this can be used for future compatibility
 in case there is no generated attribute.
 
-###### `attributeName`<sup>Required</sup> <a name="attributeName" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt.parameter.attributeName"></a>
+###### `attributeName`<sup>Required</sup> <a name="attributeName" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt.parameter.attributeName"></a>
 
 - *Type:* string
 
@@ -334,13 +334,13 @@ The name of the attribute.
 
 ---
 
-###### `typeHint`<sup>Optional</sup> <a name="typeHint" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt.parameter.typeHint"></a>
+###### `typeHint`<sup>Optional</sup> <a name="typeHint" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getAtt.parameter.typeHint"></a>
 
 - *Type:* aws-cdk-lib.ResolutionTypeHint
 
 ---
 
-##### `getMetadata` <a name="getMetadata" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata"></a>
+##### `getMetadata` <a name="getMetadata" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata"></a>
 
 ```typescript
 public getMetadata(key: string): any
@@ -358,13 +358,13 @@ Note that this is a different set of metadata from CDK node metadata; this
 metadata ends up in the stack template under the resource, whereas CDK
 node metadata ends up in the Cloud Assembly.)
 
-###### `key`<sup>Required</sup> <a name="key" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata.parameter.key"></a>
+###### `key`<sup>Required</sup> <a name="key" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.getMetadata.parameter.key"></a>
 
 - *Type:* string
 
 ---
 
-##### `obtainDependencies` <a name="obtainDependencies" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainDependencies"></a>
+##### `obtainDependencies` <a name="obtainDependencies" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainDependencies"></a>
 
 ```typescript
 public obtainDependencies(): Stack | CfnResource[]
@@ -375,7 +375,7 @@ Retrieves an array of resources this resource depends on.
 This assembles dependencies on resources across stacks (including nested stacks)
 automatically.
 
-##### `obtainResourceDependencies` <a name="obtainResourceDependencies" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainResourceDependencies"></a>
+##### `obtainResourceDependencies` <a name="obtainResourceDependencies" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.obtainResourceDependencies"></a>
 
 ```typescript
 public obtainResourceDependencies(): CfnResource[]
@@ -383,7 +383,7 @@ public obtainResourceDependencies(): CfnResource[]
 
 Get a shallow copy of dependencies between this resource and other resources in the same stack.
 
-##### `removeDependency` <a name="removeDependency" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency"></a>
+##### `removeDependency` <a name="removeDependency" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency"></a>
 
 ```typescript
 public removeDependency(target: CfnResource): void
@@ -394,13 +394,13 @@ Indicates that this resource no longer depends on another resource.
 This can be used for resources across stacks (including nested stacks)
 and the dependency will automatically be removed from the relevant scope.
 
-###### `target`<sup>Required</sup> <a name="target" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.removeDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.CfnResource
 
 ---
 
-##### `replaceDependency` <a name="replaceDependency" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency"></a>
+##### `replaceDependency` <a name="replaceDependency" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency"></a>
 
 ```typescript
 public replaceDependency(target: CfnResource, newTarget: CfnResource): void
@@ -408,7 +408,7 @@ public replaceDependency(target: CfnResource, newTarget: CfnResource): void
 
 Replaces one dependency with another.
 
-###### `target`<sup>Required</sup> <a name="target" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency.parameter.target"></a>
+###### `target`<sup>Required</sup> <a name="target" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency.parameter.target"></a>
 
 - *Type:* aws-cdk-lib.CfnResource
 
@@ -416,7 +416,7 @@ The dependency to replace.
 
 ---
 
-###### `newTarget`<sup>Required</sup> <a name="newTarget" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency.parameter.newTarget"></a>
+###### `newTarget`<sup>Required</sup> <a name="newTarget" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.replaceDependency.parameter.newTarget"></a>
 
 - *Type:* aws-cdk-lib.CfnResource
 
@@ -424,7 +424,7 @@ The new dependency to add.
 
 ---
 
-##### `inspect` <a name="inspect" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect"></a>
+##### `inspect` <a name="inspect" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect"></a>
 
 ```typescript
 public inspect(inspector: TreeInspector): void
@@ -432,7 +432,7 @@ public inspect(inspector: TreeInspector): void
 
 Examines the CloudFormation resource and discloses attributes.
 
-###### `inspector`<sup>Required</sup> <a name="inspector" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect.parameter.inspector"></a>
+###### `inspector`<sup>Required</sup> <a name="inspector" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.inspect.parameter.inspector"></a>
 
 - *Type:* aws-cdk-lib.TreeInspector
 
@@ -444,23 +444,23 @@ tree inspector to collect and process attributes.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement">isCfnElement</a></code> | Returns `true` if a construct is a stack element (i.e. part of the synthesized cloudformation template). |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource">isCfnResource</a></code> | Check whether the given construct is a CfnResource. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement">isCfnElement</a></code> | Returns `true` if a construct is a stack element (i.e. part of the synthesized cloudformation template). |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource">isCfnResource</a></code> | Check whether the given construct is a CfnResource. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct"></a>
 
 ```typescript
-import { WafIpRestrictRuleGroup } from '@gammarer/aws-waf-ip-restriction-rule-group'
+import { WafIpRestrictRuleGroup } from '@gammarers/aws-waf-ip-restriction-rule-group'
 
 WafIpRestrictRuleGroup.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -468,10 +468,10 @@ Any object.
 
 ---
 
-##### `isCfnElement` <a name="isCfnElement" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement"></a>
+##### `isCfnElement` <a name="isCfnElement" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement"></a>
 
 ```typescript
-import { WafIpRestrictRuleGroup } from '@gammarer/aws-waf-ip-restriction-rule-group'
+import { WafIpRestrictRuleGroup } from '@gammarers/aws-waf-ip-restriction-rule-group'
 
 WafIpRestrictRuleGroup.isCfnElement(x: any)
 ```
@@ -481,23 +481,23 @@ Returns `true` if a construct is a stack element (i.e. part of the synthesized c
 Uses duck-typing instead of `instanceof` to allow stack elements from different
 versions of this library to be included in the same stack.
 
-###### `x`<sup>Required</sup> <a name="x" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isCfnResource` <a name="isCfnResource" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource"></a>
+##### `isCfnResource` <a name="isCfnResource" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource"></a>
 
 ```typescript
-import { WafIpRestrictRuleGroup } from '@gammarer/aws-waf-ip-restriction-rule-group'
+import { WafIpRestrictRuleGroup } from '@gammarers/aws-waf-ip-restriction-rule-group'
 
 WafIpRestrictRuleGroup.isCfnResource(construct: IConstruct)
 ```
 
 Check whether the given construct is a CfnResource.
 
-###### `construct`<sup>Required</sup> <a name="construct" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource.parameter.construct"></a>
+###### `construct`<sup>Required</sup> <a name="construct" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.isCfnResource.parameter.construct"></a>
 
 - *Type:* constructs.IConstruct
 
@@ -507,30 +507,30 @@ Check whether the given construct is a CfnResource.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.creationStack">creationStack</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.logicalId">logicalId</a></code> | <code>string</code> | The logical ID for this CloudFormation stack element. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this element is defined. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.ref">ref</a></code> | <code>string</code> | Return a string that will be resolved to a CloudFormation `{ Ref }` for this element. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnOptions">cfnOptions</a></code> | <code>aws-cdk-lib.ICfnResourceOptions</code> | Options for this resource, such as condition, update policy etc. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnResourceType">cfnResourceType</a></code> | <code>string</code> | AWS resource type. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrArn">attrArn</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrId">attrId</a></code> | <code>string</code> | The ID of the rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrLabelNamespace">attrLabelNamespace</a></code> | <code>string</code> | The label namespace prefix for this rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Key:value pairs associated with an AWS resource. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.capacity">capacity</a></code> | <code>number</code> | The web ACL capacity units (WCUs) required for this rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.scope">scope</a></code> | <code>string</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig">visibilityConfig</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty</code> | Defines and enables Amazon CloudWatch metrics and web request sample collection. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels">availableLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group add to matching web requests. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels">consumedLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group match against in label match statements. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies">customResponseBodies</a></code> | <code>aws-cdk-lib.IResolvable \| {[ key: string ]: aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty}</code> | A map of custom response keys and content bodies. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.description">description</a></code> | <code>string</code> | A description of the rule group that helps with identification. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.name">name</a></code> | <code>string</code> | The name of the rule group. |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules">rules</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty[]</code> | The rule statements used to identify the web requests that you want to allow, block, or count. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.creationStack">creationStack</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.logicalId">logicalId</a></code> | <code>string</code> | The logical ID for this CloudFormation stack element. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.stack">stack</a></code> | <code>aws-cdk-lib.Stack</code> | The stack in which this element is defined. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.ref">ref</a></code> | <code>string</code> | Return a string that will be resolved to a CloudFormation `{ Ref }` for this element. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnOptions">cfnOptions</a></code> | <code>aws-cdk-lib.ICfnResourceOptions</code> | Options for this resource, such as condition, update policy etc. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnResourceType">cfnResourceType</a></code> | <code>string</code> | AWS resource type. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrArn">attrArn</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the rule group. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrId">attrId</a></code> | <code>string</code> | The ID of the rule group. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrLabelNamespace">attrLabelNamespace</a></code> | <code>string</code> | The label namespace prefix for this rule group. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.tags">tags</a></code> | <code>aws-cdk-lib.TagManager</code> | Key:value pairs associated with an AWS resource. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.capacity">capacity</a></code> | <code>number</code> | The web ACL capacity units (WCUs) required for this rule group. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.scope">scope</a></code> | <code>string</code> | Specifies whether this is for an Amazon CloudFront distribution or for a regional application. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig">visibilityConfig</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.VisibilityConfigProperty</code> | Defines and enables Amazon CloudWatch metrics and web request sample collection. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels">availableLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group add to matching web requests. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels">consumedLabels</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.LabelSummaryProperty[]</code> | The labels that one or more rules in this rule group match against in label match statements. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies">customResponseBodies</a></code> | <code>aws-cdk-lib.IResolvable \| {[ key: string ]: aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.CustomResponseBodyProperty}</code> | A map of custom response keys and content bodies. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.description">description</a></code> | <code>string</code> | A description of the rule group that helps with identification. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.name">name</a></code> | <code>string</code> | The name of the rule group. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules">rules</a></code> | <code>aws-cdk-lib.IResolvable \| aws-cdk-lib.IResolvable \| aws-cdk-lib.aws_wafv2.CfnRuleGroup.RuleProperty[]</code> | The rule statements used to identify the web requests that you want to allow, block, or count. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -542,7 +542,7 @@ The tree node.
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -552,7 +552,7 @@ public readonly creationStack: string[];
 
 ---
 
-##### `logicalId`<sup>Required</sup> <a name="logicalId" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.logicalId"></a>
+##### `logicalId`<sup>Required</sup> <a name="logicalId" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.logicalId"></a>
 
 ```typescript
 public readonly logicalId: string;
@@ -569,7 +569,7 @@ To override this value, use `overrideLogicalId(newLogicalId)`.
 
 ---
 
-##### `stack`<sup>Required</sup> <a name="stack" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.stack"></a>
+##### `stack`<sup>Required</sup> <a name="stack" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.stack"></a>
 
 ```typescript
 public readonly stack: Stack;
@@ -583,7 +583,7 @@ CfnElements must be defined within a stack scope (directly or indirectly).
 
 ---
 
-##### `ref`<sup>Required</sup> <a name="ref" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.ref"></a>
+##### `ref`<sup>Required</sup> <a name="ref" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.ref"></a>
 
 ```typescript
 public readonly ref: string;
@@ -598,7 +598,7 @@ coerce it to an IResolvable through `Lazy.any({ produce: resource.ref })`.
 
 ---
 
-##### `cfnOptions`<sup>Required</sup> <a name="cfnOptions" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnOptions"></a>
+##### `cfnOptions`<sup>Required</sup> <a name="cfnOptions" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnOptions"></a>
 
 ```typescript
 public readonly cfnOptions: ICfnResourceOptions;
@@ -610,7 +610,7 @@ Options for this resource, such as condition, update policy etc.
 
 ---
 
-##### `cfnResourceType`<sup>Required</sup> <a name="cfnResourceType" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnResourceType"></a>
+##### `cfnResourceType`<sup>Required</sup> <a name="cfnResourceType" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.cfnResourceType"></a>
 
 ```typescript
 public readonly cfnResourceType: string;
@@ -622,7 +622,7 @@ AWS resource type.
 
 ---
 
-##### `attrArn`<sup>Required</sup> <a name="attrArn" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrArn"></a>
+##### `attrArn`<sup>Required</sup> <a name="attrArn" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrArn"></a>
 
 ```typescript
 public readonly attrArn: string;
@@ -634,7 +634,7 @@ The Amazon Resource Name (ARN) of the rule group.
 
 ---
 
-##### `attrId`<sup>Required</sup> <a name="attrId" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrId"></a>
+##### `attrId`<sup>Required</sup> <a name="attrId" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrId"></a>
 
 ```typescript
 public readonly attrId: string;
@@ -646,7 +646,7 @@ The ID of the rule group.
 
 ---
 
-##### `attrLabelNamespace`<sup>Required</sup> <a name="attrLabelNamespace" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrLabelNamespace"></a>
+##### `attrLabelNamespace`<sup>Required</sup> <a name="attrLabelNamespace" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.attrLabelNamespace"></a>
 
 ```typescript
 public readonly attrLabelNamespace: string;
@@ -664,7 +664,7 @@ When a rule with a label matches a web request, AWS WAF adds the fully qualified
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.tags"></a>
 
 ```typescript
 public readonly tags: TagManager;
@@ -682,7 +682,7 @@ The key:value pair can be anything you define. Typically, the tag key represents
 
 ---
 
-##### `capacity`<sup>Required</sup> <a name="capacity" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.capacity"></a>
+##### `capacity`<sup>Required</sup> <a name="capacity" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.capacity"></a>
 
 ```typescript
 public readonly capacity: number;
@@ -700,7 +700,7 @@ AWS WAF uses WCUs to calculate and control the operating resources that are used
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.scope"></a>
 
 ```typescript
 public readonly scope: string;
@@ -718,7 +718,7 @@ A regional application can be an Application Load Balancer (ALB), an Amazon API 
 
 ---
 
-##### `visibilityConfig`<sup>Required</sup> <a name="visibilityConfig" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig"></a>
+##### `visibilityConfig`<sup>Required</sup> <a name="visibilityConfig" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.visibilityConfig"></a>
 
 ```typescript
 public readonly visibilityConfig: IResolvable | VisibilityConfigProperty;
@@ -732,7 +732,7 @@ Defines and enables Amazon CloudWatch metrics and web request sample collection.
 
 ---
 
-##### `availableLabels`<sup>Optional</sup> <a name="availableLabels" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels"></a>
+##### `availableLabels`<sup>Optional</sup> <a name="availableLabels" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.availableLabels"></a>
 
 ```typescript
 public readonly availableLabels: IResolvable | IResolvable | LabelSummaryProperty[];
@@ -748,7 +748,7 @@ These labels are defined in the `RuleLabels` for a `Rule` .
 
 ---
 
-##### `consumedLabels`<sup>Optional</sup> <a name="consumedLabels" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels"></a>
+##### `consumedLabels`<sup>Optional</sup> <a name="consumedLabels" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.consumedLabels"></a>
 
 ```typescript
 public readonly consumedLabels: IResolvable | IResolvable | LabelSummaryProperty[];
@@ -764,7 +764,7 @@ These labels are defined in a `LabelMatchStatement` specification, in the `State
 
 ---
 
-##### `customResponseBodies`<sup>Optional</sup> <a name="customResponseBodies" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies"></a>
+##### `customResponseBodies`<sup>Optional</sup> <a name="customResponseBodies" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.customResponseBodies"></a>
 
 ```typescript
 public readonly customResponseBodies: IResolvable | {[ key: string ]: IResolvable | CustomResponseBodyProperty};
@@ -784,7 +784,7 @@ For information about the limits on count and size for custom request and respon
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -798,7 +798,7 @@ A description of the rule group that helps with identification.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -814,7 +814,7 @@ You cannot change the name of a rule group after you create it.
 
 ---
 
-##### `rules`<sup>Optional</sup> <a name="rules" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules"></a>
+##### `rules`<sup>Optional</sup> <a name="rules" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.rules"></a>
 
 ```typescript
 public readonly rules: IResolvable | IResolvable | RuleProperty[];
@@ -834,11 +834,11 @@ Each rule includes one top-level statement that AWS WAF uses to identify matchin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.CFN_RESOURCE_TYPE_NAME">CFN_RESOURCE_TYPE_NAME</a></code> | <code>string</code> | The CloudFormation resource type name for this resource class. |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.CFN_RESOURCE_TYPE_NAME">CFN_RESOURCE_TYPE_NAME</a></code> | <code>string</code> | The CloudFormation resource type name for this resource class. |
 
 ---
 
-##### `CFN_RESOURCE_TYPE_NAME`<sup>Required</sup> <a name="CFN_RESOURCE_TYPE_NAME" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.CFN_RESOURCE_TYPE_NAME"></a>
+##### `CFN_RESOURCE_TYPE_NAME`<sup>Required</sup> <a name="CFN_RESOURCE_TYPE_NAME" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroup.property.CFN_RESOURCE_TYPE_NAME"></a>
 
 ```typescript
 public readonly CFN_RESOURCE_TYPE_NAME: string;
@@ -852,12 +852,12 @@ The CloudFormation resource type name for this resource class.
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### WafIpRestrictRuleGroupProps <a name="WafIpRestrictRuleGroupProps" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps"></a>
+### WafIpRestrictRuleGroupProps <a name="WafIpRestrictRuleGroupProps" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps"></a>
 
-#### Initializer <a name="Initializer" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.Initializer"></a>
+#### Initializer <a name="Initializer" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.Initializer"></a>
 
 ```typescript
-import { WafIpRestrictRuleGroupProps } from '@gammarer/aws-waf-ip-restriction-rule-group'
+import { WafIpRestrictRuleGroupProps } from '@gammarers/aws-waf-ip-restriction-rule-group'
 
 const wafIpRestrictRuleGroupProps: WafIpRestrictRuleGroupProps = { ... }
 ```
@@ -866,13 +866,13 @@ const wafIpRestrictRuleGroupProps: WafIpRestrictRuleGroupProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.allowIpSetArn">allowIpSetArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.scope">scope</a></code> | <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.Scope">Scope</a></code> | *No description.* |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.allowIpSetArn">allowIpSetArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.scope">scope</a></code> | <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.Scope">Scope</a></code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `allowIpSetArn`<sup>Required</sup> <a name="allowIpSetArn" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.allowIpSetArn"></a>
+##### `allowIpSetArn`<sup>Required</sup> <a name="allowIpSetArn" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.allowIpSetArn"></a>
 
 ```typescript
 public readonly allowIpSetArn: string;
@@ -882,17 +882,17 @@ public readonly allowIpSetArn: string;
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.scope"></a>
 
 ```typescript
 public readonly scope: Scope;
 ```
 
-- *Type:* <a href="#@gammarer/aws-waf-ip-restriction-rule-group.Scope">Scope</a>
+- *Type:* <a href="#@gammarers/aws-waf-ip-restriction-rule-group.Scope">Scope</a>
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@gammarer/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@gammarers/aws-waf-ip-restriction-rule-group.WafIpRestrictRuleGroupProps.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -906,23 +906,23 @@ public readonly name: string;
 
 ## Enums <a name="Enums" id="Enums"></a>
 
-### Scope <a name="Scope" id="@gammarer/aws-waf-ip-restriction-rule-group.Scope"></a>
+### Scope <a name="Scope" id="@gammarers/aws-waf-ip-restriction-rule-group.Scope"></a>
 
 #### Members <a name="Members" id="Members"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.Scope.GLOBAL">GLOBAL</a></code> | *No description.* |
-| <code><a href="#@gammarer/aws-waf-ip-restriction-rule-group.Scope.REGIONAL">REGIONAL</a></code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.Scope.GLOBAL">GLOBAL</a></code> | *No description.* |
+| <code><a href="#@gammarers/aws-waf-ip-restriction-rule-group.Scope.REGIONAL">REGIONAL</a></code> | *No description.* |
 
 ---
 
-##### `GLOBAL` <a name="GLOBAL" id="@gammarer/aws-waf-ip-restriction-rule-group.Scope.GLOBAL"></a>
+##### `GLOBAL` <a name="GLOBAL" id="@gammarers/aws-waf-ip-restriction-rule-group.Scope.GLOBAL"></a>
 
 ---
 
 
-##### `REGIONAL` <a name="REGIONAL" id="@gammarer/aws-waf-ip-restriction-rule-group.Scope.REGIONAL"></a>
+##### `REGIONAL` <a name="REGIONAL" id="@gammarers/aws-waf-ip-restriction-rule-group.Scope.REGIONAL"></a>
 
 ---
 

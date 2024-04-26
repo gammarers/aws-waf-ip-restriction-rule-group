@@ -7,11 +7,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   typescriptVersion: '5.2.x',
   jsiiVersion: '5.2.x',
   defaultReleaseBranch: 'main',
-  name: '@gammarer/aws-waf-ip-restriction-rule-group',
+  name: '@gammarers/aws-waf-ip-restriction-rule-group',
   description: 'This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2',
   majorVersion: 1,
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/gammarer/aws-waf-ip-restriction-rule-group.git',
+  repositoryUrl: 'https://github.com/gammarers/aws-waf-ip-restriction-rule-group.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '16.0.0',
   workflowNodeVersion: '20.11.0',
@@ -26,18 +26,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     allowedUsernames: ['yicr'],
   },
   publishToPypi: {
-    distName: 'gammarer.aws-waf-ip-restriction-rule-group',
-    module: 'gammarer.aws_waf_ip_restriction_rule_group',
-  },
-  publishToMaven: {
-    mavenGroupId: 'com.gammarer',
-    javaPackage: 'com.gammarer.cdk.aws.waf_ip_restriction_rule_group',
-    mavenArtifactId: 'aws-waf-ip-restriction-rule-group',
-    mavenEndpoint: 'https://s01.oss.sonatype.org',
+    distName: 'gammarers.aws-waf-ip-restriction-rule-group',
+    module: 'gammarers.aws_waf_ip_restriction_rule_group',
   },
   publishToNuget: {
-    dotNetNamespace: 'Gammarer.CDK.AWS',
-    packageId: 'Gammarer.CDK.AWS.WafIpRestrictionRuleGroup',
+    dotNetNamespace: 'Gammarers.CDK.AWS',
+    packageId: 'Gammarers.CDK.AWS.WafIpRestrictionRuleGroup',
   },
 });
 project.synth();
