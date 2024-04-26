@@ -127,8 +127,8 @@
         "module": "gammarers.aws_waf_ip_restriction_rule_group"
       },
       "dotnet": {
-        "namespace": "Gammarer.CDK.AWS",
-        "packageId": "Gammarer.CDK.AWS.WafIpRestrictionRuleGroup"
+        "namespace": "Gammarers.CDK.AWS",
+        "packageId": "Gammarers.CDK.AWS.WafIpRestrictionRuleGroup"
       }
     },
     "tsc": {

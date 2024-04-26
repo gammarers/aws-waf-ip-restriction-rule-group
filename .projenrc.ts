@@ -30,8 +30,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'gammarers.aws_waf_ip_restriction_rule_group',
   },
   publishToNuget: {
-    dotNetNamespace: 'Gammarer.CDK.AWS',
-    packageId: 'Gammarer.CDK.AWS.WafIpRestrictionRuleGroup',
+    dotNetNamespace: 'Gammarers.CDK.AWS',
+    packageId: 'Gammarers.CDK.AWS.WafIpRestrictionRuleGroup',
   },
 });
 project.synth();
