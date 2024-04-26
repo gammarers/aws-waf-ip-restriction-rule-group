@@ -1,9 +1,9 @@
 {
-  "name": "@gammarer/aws-waf-ip-restriction-rule-group",
+  "name": "@gammarers/aws-waf-ip-restriction-rule-group",
   "description": "This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gammarer/aws-waf-ip-restriction-rule-group.git"
+    "url": "https://github.com/gammarers/aws-waf-ip-restriction-rule-group.git"
   },
   "scripts": {
     "build": "npx projen build",
