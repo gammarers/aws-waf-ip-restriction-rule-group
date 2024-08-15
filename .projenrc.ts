@@ -4,8 +4,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'yicr@users.noreply.github.com',
   cdkVersion: '2.80.0',
   constructsVersion: '10.0.5',
-  typescriptVersion: '5.2.x',
-  jsiiVersion: '5.2.x',
+  typescriptVersion: '5.4.x',
+  jsiiVersion: '5.4.x',
   defaultReleaseBranch: 'main',
   name: '@gammarers/aws-waf-ip-restriction-rule-group',
   description: 'This is an AWS CDK Construct for IP Restriction Rule Group on WAF V2',
@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/gammarers/aws-waf-ip-restriction-rule-group.git',
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '16.0.0',
-  workflowNodeVersion: '20.11.0',
+  workflowNodeVersion: '22.4.x',
   depsUpgradeOptions: {
     workflowOptions: {
       labels: ['auto-approve', 'auto-merge'],
